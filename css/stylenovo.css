@@ -2,9 +2,17 @@ body{
     background-color: rgb(245, 244, 231);
 }
 
+   main{
+    display: flex;
+    padding-top: 80px;
+   }
+   
 .header{
     padding: 20px;
+    position: fixed;
+    width: 100%;
 }
+
 
 .links{
     display: inline;
@@ -46,7 +54,6 @@ body{
     padding: 5px;
 }
 
-
 .span-1, .span-2{
     font-weight: bold;
     font-size: x-large;
@@ -73,33 +80,7 @@ footer {
     text-align: justify;
     columns: 3;
     font-weight: bold;
-    margin:50px;
-}
-
-.secao-1{
-    width: 100%;
-    margin-left: 0;
-    margin-top: 10px;
-    padding: 5px;
-}
-
-.secao-2{
-    width: 100%;
-    margin-top:50px ;
-    margin-bottom: 100px;
-}
-
-.secao-3{
-    width: 100%;
-
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.secao-4{
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin:10px;
 }
 
 .secao-1 h1{
@@ -109,29 +90,57 @@ footer {
 .secao-1 h2{
     font-weight: lighter;
     color: #e605d3;
-}
-
-img{
-    width: 400px;
-    margin: 0 auto;
-}
-.img img{
-    width: 33%;
-    border-radius: 100%;
-}
-
-.img-col{
-    width: 20%;
-    border-radius: 100%;
+    margin: top 10px; 
 }
 
 h2{
-    padding: 10px;
+   margin-top: 20px;
 }
 
-h1{
-    text-align: center;
+.secao-2 h2{
+    font-weight: lighter;
+    color: #e605d3;
+    margin: top 10px; 
+}
+
+.linha-divisoria{
+    width: 0.5%;
+    background-color: rgb(255, 0, 221);
+    height: 100hv;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+.contanier{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.secao-1{
+    width: 66%;
+    margin-left: 0;
     padding: 15px;
+    height: 100hv;
+}
+
+.secao-2{
+    width: 40%;
+    margin-left: 0;
+    padding: 15px;
+    height: 100hv;
+}
+
+.mySlides{
+     width: 300px;
+     height: 200px;
+     border-radius: 20px;
+     margin: 0 auto;
+}
+
+.img2{
+    width: 100%;
+    border-radius: 20px;
 }
 
 h3{
@@ -147,11 +156,8 @@ h3{
     padding: 20px;
 }
 
-button{
-    padding: 20px;
-    margin-left: 40px;
-}
-
-.btn btn-info{
-    size: 50px;
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
